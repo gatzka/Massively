@@ -19,9 +19,6 @@ into the {body} of the default.hbs template --}}
             {{#if location}}
             <div class="author-location icon fa-map-pin">{{location}} <span class="bull">&bull;</span></div>
             {{/if}}
-            <div class="author-stats">
-                {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}} <span class="bull">&bull;</span>
-            </div>
             {{#if website}}
             <a href="{{url}}" class="icon fa-globe" title="Website"><span class="label">Website</span></a>
             {{/if}}
@@ -31,7 +28,8 @@ into the {body} of the default.hbs template --}}
             {{#if facebook}}
             <a href="{{facebook_url}}" class="icon fa-facebook" title="Facebook"><span class="label">Facebook</span></a>
             {{/if}}
-            <a href="https://feedly.com/i/subscription/feed/{{url absolute="true"}}rss/" class="icon fa-rss" target="_blank" rel="noopener"><span class="label" title="RSS">RSS</span></a>
+            <a href="https://www.instagram.com/wiebkehuester/" class="icon fa-instagram" target="_blank" rel="noopener"><span class="label" title="Instagram">Instagram</span></a>
+            <a href="mailto:Wiebke.Huester@t-online.de?subject=Kontakt" class="icon fa-envelope" target="_blank" rel="noopener"><span class="label" title="E-Mail">E-Mail</span></a>
         </div>
     </header>
     {{/author}}
